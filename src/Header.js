@@ -1,5 +1,4 @@
 import React from "react";
-import {blushes,lipsticks,eyeshadows} from "./Products.js";
 import "./Header.css";
 
 export default function Header() {

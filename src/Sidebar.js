@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ShoppingCart } from './AllProducts.js';
 
 export default function SideBar() {
 
@@ -23,6 +24,7 @@ export default function SideBar() {
               alt="cart"
             />
             <h2>Cart</h2>
+            <ShoppingCart />
             <p>Total: </p>
           </div>
           <div className="sidebar-title">

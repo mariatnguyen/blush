@@ -85,7 +85,7 @@
 .products-wrapper .product-individual .product-price:before {
     content: "$";
 }
-
+/*
 #overlay {
     display: none;
     position: fixed;
@@ -98,7 +98,7 @@
     background-color: rgba(0,0,0,0.5);
     z-index: 100; 
 }
-
+*/
 .sidebar {
     position: absolute;
     top: 0;

@@ -1,14 +1,23 @@
 import React, { useState } from "react";
-import Sidebar from './Sidebar';
-import { blushes, lipsticks, eyeshadows } from "./Products";
+import blushes from "./blushes.json";
+import lipsticks from "./lipsticks.json";
+import eyeshadows from "./eyeshadows.json";
 
-export default function ProductsList() {
+export default function AllProducts() {
+  const [cart, setCart] = useState([]);
+
+  const addItem = (item, index) => {
+    setCart((prev) => {
+      return [item, ...prev];
+    });
+  };
+
   function listProducts(item, index) {
     return <div className="product-individual" id={'product--' + index} key={index}>
       <div className="product-image">
         <div className="product-image-icons">
-          <ul>{console.log(this)}
-            <li><img
+          <ul>
+            <li key={item.name} onClick={() => addItem(item)}><img
               className="icon"
               src="/images/icons/addtocart.svg"
               width="25"
@@ -36,11 +45,19 @@ export default function ProductsList() {
   const lipstickList = lipsticks.map(listProducts);
   const eyeshadowList = eyeshadows.map(listProducts);
 
-  return (
+  return (  
     <div className="products-wrapper">
+      <ShoppingCart cart = {cart}/>
       {blushList}
       {lipstickList}
       {eyeshadowList}
     </div>
   );
 }
+
+export function ShoppingCart(cart) { 
+  console.log(cart);
+  return (
+  <ul>
+</ul>)
+};

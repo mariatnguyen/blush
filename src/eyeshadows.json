@@ -1,0 +1,20 @@
+[
+    {
+      "name":"Blush",
+      "src":"/images/products/eyeshadow-blush.png",
+      "price":"17",
+      "category":"eyeshadow"
+    },
+    {
+      "name":"Burgundy",
+      "src":"/images/products/eyeshadow-burgundy.png",
+      "price":"17",
+      "category":"eyeshadow"
+    },
+    {
+      "name":"Nude",
+      "src":"/images/products/eyeshadow-nude.png",
+      "price":"17",
+      "category":"eyeshadow"
+    }
+]
